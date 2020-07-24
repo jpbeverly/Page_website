@@ -8,12 +8,13 @@ googleAnalytics = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/"]
 publishDir = "docs"
 
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [params]
     author = "UVA Biocomplexity Institute"
-    description = "2020 DSPG Project Name"
+    description = "2020 DSPG Page County"
     logo = "favicon/uva-dspg-logo.jpg"
     githubUsername = "uva-bi-sdad"
     accent = "#232D4B" # dark colors do best
