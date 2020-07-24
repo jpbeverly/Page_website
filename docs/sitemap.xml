@@ -29,11 +29,6 @@
   </url>
   
   <url>
-    <loc>/team/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/app/</loc>
   </url>
   
@@ -67,6 +62,10 @@
   
   <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/team/</loc>
   </url>
   
 </urlset>
