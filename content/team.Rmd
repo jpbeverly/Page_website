@@ -26,13 +26,13 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 <center>
 ![Josh Beverly](/images/Josh.Beverly.VT.jpg){width=150px height=200px} ![Talib Grant](/Talib.Grant.VT.jpg){width=150px height=200px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=150px height=200px} ![Afrina Tabassum](/images/Afrina.Tabassum.VT.jpg){width=150px height=200px}
 
-[Josh Beverly, Fellow (Graduate Student at Virginia Tech, Agricultural and Applied Economics)](https://github.com/jpbeverly)
+[Josh Beverly, Fellow (Ph.D. Student at Virginia Tech, Agricultural and Applied Economics)](https://github.com/jpbeverly)
 
 [Talib Grant, Intern (Undergraduate Student at Virginia Tech, Data Analytics) ](https://github.com/tkgrant)
 
 [Laura Pranteddu, Intern (Master Student at University of Trento, Data Science)](https://github.com/lp9kh) | 
 
-[Afrina Tabassum, Intern (Virginia Tech, Mathematics)](https://github.com/sp3sd)
+[Afrina Tabassum, Intern (Ph.D. Student at Virginia Tech, Computer Science)](https://github.com/sp3sd)
 
 </center>
 
@@ -51,7 +51,7 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 
 [Conaway Haskins (Extensions Specialist, Rural & Regional Development)](https://ext.vt.edu/community-leadership/people/conaway-haskins.html)
 
-[Matt Holt (Department Head, Professor, Agribusiness, Applied Econometrics)](https://aaec.vt.edu/people/faculty/holt-matthew.htmln)
+[Matt Holt (Department Head, Professor, Agribusiness, Applied Econometrics, Principal Investigator)](https://aaec.vt.edu/people/faculty/holt-matthew.htmln)
 
 [Ford Ramsey (Assistant Professor, Agribusiness, DSPG Project Co-Lead)](https://aaec.vt.edu/people/faculty/ramsey-ford.html)
 
