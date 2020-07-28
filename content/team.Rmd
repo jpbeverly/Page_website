@@ -24,7 +24,7 @@ The Data Science for the Public Good (DSPG) Young Scholars program](https://bioc
 ### DSPG Team Members {style=text-align:center}
 
 <center>
-![Josh Beverly](/images/Josh.Beverly.VT.jpg){width=150px height=200px} ![Talib Grant](/Talib.Grant.VT.jpg){width=150px height=200px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=150px height=200px} ![Afrina Tabassum](/images/Afrina.Tabassum.VT.jpg){width=150px height=200px}
+![Josh Beverly](/images/Josh.Beverly.VT.jpg){width=150px height=200px}![Talib Grant](/Talib.Grant.VT.jpg){width=150px height=200px} ![Laura Pranteddu](/images/Laura.Pranteddu.VT.JPG){width=150px height=200px} ![Afrina Tabassum](/images/Afrina.Tabassum.VT.jpg){width=150px height=200px}
 
 [Josh Beverly, Fellow (Ph.D. Student at Virginia Tech, Agricultural and Applied Economics)](https://github.com/jpbeverly)
 
