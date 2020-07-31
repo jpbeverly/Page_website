@@ -11,49 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county. 
 
-<center>
-![Page](/images/PageCounty.png){width=350px height=200px}
-</center>
 
-While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.
-Derived from the Latin recidivus  meaning "recurring", recidivism means "a falling back" usually implying into bad habits.
+![Virginia](/images/PageCounty.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
+
+
+While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.
+Derived from the Latin recidivus meaning "recurring", recidivism means "a falling back" usually implying into bad habits.
 
 
 <center>
 ![Page](/download/recidivism.png){width=350px height=200px}
 </center>
 
-Correctional Education Study Findings: 
-even small levels of improvement can increase an individual's ability to function in the community.
-Page County has low infrastructure which is a barrier to increasing education via:
-remote work, education and mental health care
-
-<center>
-![Page](/download/Senza titolo.png){width=350px height=200px}
-</center>
-
-
-
-
-
-
-
-
-
-Grants Awarded to Page County:
-
-Rural Health Opioid Program 
-End: Sep 29,2020 
-$477k 
-Aims to enhance health care delivery in the Delta Region through intensive technical assistance to providers. 
-Page Alliance For Community Acton Substance Abuse Prevention Coalition 
-
-
-Ends: Sep 29, 2020 
-$250K 
-Aims to increase the capacity of community coalitions to reduce substance abuse, and over time, to reduce substance abuse among adults through strengthening collaboration among communities, public and private entities. 
-
-</center>
 
 ###Project Goals 
 
@@ -65,12 +34,4 @@ Aims to increase the capacity of community coalitions to reduce substance abuse
 3. $\textbf{Create}$ a vulnerability score to identify factors and areas vulnerable to recidivism and intergeneration poverty issues. 
 
 
-### Our Approach{style=text-align:center}
 
-
-We Use 
-
-<center>
-![Approach](/images/Approach.png)
-[Approach](https://github.com/jpbeverly)
-</center>
