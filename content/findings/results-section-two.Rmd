@@ -1,6 +1,6 @@
 ---
 title: "Results Section Two"
-description: "Project description here"
+description: "Grants"
 tags: ["R", "collapsibleTree"]
 weight: 3
 draft: false

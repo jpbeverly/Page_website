@@ -1,6 +1,6 @@
 ---
 title: "Results Section One"
-description: "This page includes a bunch of example code."
+description: "Accessibility Indicators"
 tags: ["R", "geospatial", "app"]
 weight: 2
 draft: false

@@ -1,6 +1,6 @@
 ---
 title: "Results Section Three"
-description: "Project description here"
+description: "Composite Vulnerability Index"
 tags: ["R", "networks"]
 weight: 4
 draft: false

@@ -43,6 +43,31 @@ We used these two frameworks to help us find data to identify and compare commun
 
 ###Spatial Variables
 
+The regional accessibility indicator is created by examining the education and health facilities within a specified radius.  
+
+In the health care data, we include hospitals, clinics, counseling centers, and other facilities that are immediately in aid of a vulnerable population.  The education data includes colleges, universities, career training facilities, and other sources for continued education after high school. 
+
+
+To calculate a regional accessibility indicator at a county level, a center location must be determined. To find the center for each Virginia county, the geometric center weighted by population density is used.
+
+
+Centers of Population for the 2010 Census. 
+Retrieved from [here](https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html).
+
+
+For each Virginia county, only facilities within a specified radius would contribute to each county indicator.
+
+
+Regional Resource Accessibility = $\frac{\sum_{}^{} \frac{1}{distance}}{population}$
+
+The summation of the inverse distances between each education or health facility to the county population center was used to weight the closer resources higher than those further away.
+
+Lastly, the summation for each county is weighted by its county population to account for differences in rural and urban areas.
+The results are regional resource accessibility indicators for education and health facilities on the county level.
+
+
+
+
 ###Factor Analysis
 
 ###Composite Vulnerability Score Construction
