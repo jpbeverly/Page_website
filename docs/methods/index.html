@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Data and Methodology</title>
-        <link rel="canonical" href="/methods/">
+        <link rel="canonical" href="../methods/">
         <style>
 
     html body {
@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="../css/main.css">
 
 
 
@@ -95,18 +95,18 @@ $(document).ready(function(){
   })
 });
 </script>
- <meta name="generator" content="Hugo 0.74.3" />
+ <meta name="generator" content="Hugo 0.74.2" />
         <link href="" rel="alternate" type="application/rss+xml" title="UVA Biocomplexity Institute" />
         <link href="" rel="feed" type="application/rss+xml" title="UVA Biocomplexity Institute" />
         
 
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -149,15 +149,15 @@ $(document).ready(function(){
                     
                         <ul class="nav navbar-nav">
                             
-                                <li><a href="/">Home</a></li>
+                                <li><a href="../">Home</a></li>
                             
-                                <li><a href="/overview/">Overview</a></li>
+                                <li><a href="../overview/">Overview</a></li>
                             
-                                <li><a href="/methods/">Data &amp; Methods</a></li>
+                                <li><a href="../methods/">Data &amp; Methods</a></li>
                             
-                                <li><a href="/findings/">Findings</a></li>
+                                <li><a href="../findings/">Findings</a></li>
                             
-                                <li><a href="/team/">Team</a></li>
+                                <li><a href="../team/">Team</a></li>
                             
                         </ul>
                     
@@ -193,7 +193,7 @@ $(document).ready(function(){
       
     
 
-    <h4><a href="/methods/">Data and Methodology</a></h4>
+    <h4><a href="../methods/">Data and Methodology</a></h4>
     
     <h5></h5>
 
@@ -215,39 +215,40 @@ $(document).ready(function(){
 <p>The Comunity Capital Framework is an approach to analyze communities and economic mobility. The framework includes seven types of capital: Built Capital, Human Capital, Social Capital, Financial Capital, Political Capital, Cultural Capital, and Natural Capital.</p>
 <p>To better understand the community in Page and surrounding counties, we focused on the first six types of capital.</p>
 <center>
-<img src="/images/capital.png" title="fig:" alt="Approach" width="300" height="400" />
+<img src="../images/capital.png" alt="Approach" width="300" height="400" />
 </center>
 <p>In addition, we approached the research questions from an Ecological Framework as well. In the Ecological Framework, some people are at higher risk or more vulnerable because of multiple factors at different levels. The four main levels include: individual, relationships, community and societal.</p>
 <center>
-<img src="/images/vulnerable.png" title="fig:" alt="Approach" width="500" height="400" />
+<img src="../images/vulnerable.png" alt="Approach" width="500" height="400" />
 </center>
 <p>We used these two frameworks to help us find data to identify and compare community capital in Page and surrounding counties.</p>
 </div>
 <div id="data-sources" class="section level2">
 <h2>Data Sources</h2>
 <center>
-<img src="/images/data.png" title="fig:" alt="Data" width="500" height="250" />
+<img src="../images/data.png" alt="Data" width="500" height="250" />
 </center>
 </div>
 <div id="methodology" class="section level2">
 <h2>Methodology</h2>
-<p>###Spatial Variables</p>
+<div id="spatial-variables" class="section level3">
+<h3>Spatial Variables</h3>
 <p>The regional accessibility indicator is created by examining the education and health facilities within a specified radius.</p>
 <p>In the health care data, we include hospitals, clinics, counseling centers, and other facilities that are immediately in aid of a vulnerable population. The education data includes colleges, universities, career training facilities, and other sources for continued education after high school.</p>
 <p>To calculate a regional accessibility indicator at a county level, a center location must be determined. To find the center for each Virginia county, the geometric center weighted by population density is used.</p>
-<p>Centers of Population for the 2010 Census.
-Retrieved from <a href="https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html">here</a>.</p>
+<p>Centers of Population for the 2010 Census. Retrieved from <a href="https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html">here</a>.</p>
 <p>For each Virginia county, only facilities within a specified radius would contribute to each county indicator.</p>
-<p>Regional Resource Accessibility = <span class="math inline">\(\frac{\sum_{}^{} \frac{1}{distance}}{population}\)</span></p>
+<p><span class="math display">\[\mathcal{A_i} = \frac{\sum\limits_{j=1}^n \frac{1}{dist_{i}}}{pop_i}\]</span></p>
 <p>The summation of the inverse distances between each education or health facility to the county population center was used to weight the closer resources higher than those further away.</p>
-<p>Lastly, the summation for each county is weighted by its county population to account for differences in rural and urban areas.
-The results are regional resource accessibility indicators for education and health facilities on the county level.</p>
-<p>###Factor Analysis</p>
-<p>###Composite Vulnerability Score Construction
-Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.
-<span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span>
-where <span class="math inline">\(\mathcal{F}\)</span> is the Composite Score,
-<span class="math inline">\(X^s\)</span> is the Standardized design matrix, <span class="math inline">\(F^T\)</span> is the Matrix of Factor Scores and <span class="math inline">\(\textbf{w}\)</span> is the Proportion of Variance Explained.</p>
+<p>Lastly, the summation for each county is weighted by its county population to account for differences in rural and urban areas. The results are regional resource accessibility indicators for education and health facilities on the county level.</p>
+</div>
+<div id="factor-analysis" class="section level3">
+<h3>Factor Analysis</h3>
+</div>
+<div id="composite-vulnerability-score-construction" class="section level3">
+<h3>Composite Vulnerability Score Construction</h3>
+<p>Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores. <span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span> where <span class="math inline">\(\mathcal{F}\)</span> is the Composite Score, <span class="math inline">\(X^s\)</span> is the Standardized design matrix, <span class="math inline">\(F^T\)</span> is the Matrix of Factor Scores and <span class="math inline">\(\textbf{w}\)</span> is the Proportion of Variance Explained.</p>
+</div>
 </div>
 </div>
 

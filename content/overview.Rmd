@@ -20,8 +20,13 @@ Derived from the Latin recidivus meaning "recurring", recidivism means "a fallin
 
 
 <center>
-![Page](/download/recidivism.png){width=350px height=200px}
+![Page](/images/prison.jpg){width=350px height=200px}
 </center>
+
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
+<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
 ###Project Goals 
