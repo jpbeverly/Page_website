@@ -1,5 +1,5 @@
 ---
-title: "methods"
+title: "Data and Methodology"
 output: html_document
 ---
 
@@ -8,14 +8,45 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ### 2020 Page County Summer Project {style=text-align:center}
-### Data and Methodology {style=text-align:center}
+
+
+## Our Approach
+
+We pulled from the Community Capital and Ecological frameworks to inform us for potential data sources.  
+
+The Comunity Capital Framework is an approach to analyze communities and economic mobility. The framework includes seven types of capital: Built Capital, Human Capital, Social Capital, Financial Capital, Political Capital, Cultural Capital, and Natural Capital.
+
+To better understand the community in Page and surrounding counties, we focused on the first six types of capital. 
+
+
+<center>
+![Approach](/images/capital.png){width=300px height=400px}
+</center>
+
+
+
+In addition, we approached the research questions from an Ecological Framework as well. In the Ecological Framework, some people are at higher risk or more vulnerable because of multiple factors at different levels. The four main levels include: individual, relationships, community and societal.  
+
+<center>
+![Approach](/images/vulnerable.png){width=500px height=400px}
+</center>
+
+We used these two frameworks to help us find data to identify and compare community capital in Page and surrounding counties.
 
 ## Data Sources
+<center>
+![Data](/images/data.png){width=500px height=250px}
+</center>
 
 
+## Methodology
 
-##### [Visualizations go about here.] {style=text-align:center}
+###Spatial Variables
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+###Factor Analysis
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in varius purus. Nullam ut sodales ante. Fusee justo nisi, suscipit a lacus et, posuere sagittis ex. Nulla convallis ante elit, at consequat ipsum ultricies ut. Aliquam erat volutpat. nderline. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in variu convallis ante elit, at consequat ipsum ultricies ut.
+###Composite Vulnerability Score Construction
+Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.
+$$\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}$$
+where $\mathcal{F}$ is the Composite Score, 
+$X^s$ is the Standardized design matrix, $F^T$ is the Matrix of Factor Scores and $\textbf{w}$ is the Proportion of Variance Explained.
