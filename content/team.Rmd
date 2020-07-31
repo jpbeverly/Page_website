@@ -36,7 +36,7 @@ library(jpeg)
 
 [Laura Pranteddu, Intern (Master Student at University of Trento, Data Science)](https://github.com/lp9kh) | 
 
-[Afrina Tabassum, Intern (Ph.D. Student at Virginia Tech, Computer Science)](https://github.com/sp3sd)
+[Afrina Tabassum, Intern (Ph.D. Student at Virginia Tech, Computer Science)](https://github.com/AfrinaVT)
 
 </center>
 

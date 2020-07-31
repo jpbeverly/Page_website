@@ -11,22 +11,13 @@
     
     
     <item>
-      <title>General Overview of the Project</title>
-      <link>/findings/general-overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/findings/general-overview/</guid>
-      <description>This is a test While this page is optional, it probably makes sense to have one weighted at the top (see the front matter at the top of this Rmd file) that gives a general overview of the project. This could be something like the final poster while the other pages highlight more in-depth observations. Here is a general schema of what should be covered throughout your website:
-Main FindingsRecidivism and Grant SearchCorrectional Education Study Findings:Even small levels of improvement can increase an individual&#39;s ability to function in the community.</description>
-    </item>
-    
-    <item>
       <title>Results Section One</title>
       <link>/findings/results-section-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-one/</guid>
-      <description>/* this chunnk of code centers all of the headings */h1, h2, h3 {text-align: center;}Examples PageIf you want to add in an image on an Rmd file, use this link here. It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want.</description>
+      <description>/* this chunnk of code centers all of the headings */ h1, h2, h3 { text-align: center; }  Main Findings Correctional Education Study Findings: Even small levels of improvement can increase an individual&#39;s ability to function in the community. Page County has low infrastructure which is a barrier to increasing education via: remote work, education and mental health care
+   Grants Awarded to Page County: Rural Health Opioid Program</description>
     </item>
     
     <item>
@@ -35,8 +26,9 @@ Main FindingsRecidivism and Grant SearchCorrectional Education Study Findings:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/findings/results-section-two/</guid>
-      <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings[Here you will describe the results and include important visualizations from your project.</description>
+      <description> Main Findings Isochrone Mapping  Spatial Variables       Conclusion and Policy Implications [Here you could highlight the main takeaways and the potential policy implications of your findings.]
+ References [List your references here using APA format (or at least standardize all of the references using the same format).]
+ </description>
     </item>
     
     <item>
@@ -46,7 +38,7 @@ Main Findings[Here you will describe the results and include important visualiz
       
       <guid>/findings/results-section-three/</guid>
       <description>[Here you will describe the data discoversy process, the data used, and the methods employed for this single page. Since you already have a Project Overview and Data &amp;amp; Methods tabs, you probably want to keep this first paragraph fairly short and use the rest of the document to walk your readers through your analyses.]
-Main Findings[Here you will describe the results and include important visualizations from your project.</description>
+Main Findings Factor Analysis  Composite Vulnerability Score  Conclusion and Policy Implications [Here you could highlight the main takeaways and the potential policy implications of your findings.</description>
     </item>
     
     <item>
@@ -55,7 +47,7 @@ Main Findings[Here you will describe the results and include important visualiz
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/methods/</guid>
-      <description>2020 Page County Summer ProjectOur ApproachWe pulled from the Community Capital and Ecological frameworks to inform us for potential data sources.
+      <description>2020 Page County Summer Project  Our Approach We pulled from the Community Capital and Ecological frameworks to inform us for potential data sources.
 The Comunity Capital Framework is an approach to analyze communities and economic mobility. The framework includes seven types of capital: Built Capital, Human Capital, Social Capital, Financial Capital, Political Capital, Cultural Capital, and Natural Capital.
 To better understand the community in Page and surrounding counties, we focused on the first six types of capital.</description>
     </item>
@@ -66,9 +58,9 @@ To better understand the community in Page and surrounding counties, we focused 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/overview/</guid>
-      <description>2020 Page County Summer ProjectPage County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county.
+      <description>2020 Page County Summer Project Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county.
 Virginia
-While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.</description>
+ While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.</description>
     </item>
     
     <item>
@@ -77,7 +69,7 @@ Virginia
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/team/</guid>
-      <description>Data Science for the Public Good ProgramThe Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
+      <description>Data Science for the Public Good Program  The Data Science for the Public Good (DSPG) Young Scholars program is a summer immersive program held at the Biocomplexity Institute’s Social and Decision Analytics division (SDAD). In its seventh year, the program engages students from across the country to work together on projects that address state, federal, and local government challenges around critical social issues relevant in the world today.</description>
     </item>
     
   </channel>

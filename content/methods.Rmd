@@ -33,13 +33,13 @@ In addition, we approached the research questions from an Ecological Framework a
 
 We used these two frameworks to help us find data to identify and compare community capital in Page and surrounding counties.
 
-## Data Sources
+##Data Sources
 <center>
 ![Data](/images/data.png){width=500px height=250px}
 </center>
 
 
-## Methodology
+##Methodology
 
 ###Spatial Variables
 
@@ -58,7 +58,7 @@ Retrieved from [here](https://www.census.gov/geographies/reference-files/2010/ge
 For each Virginia county, only facilities within a specified radius would contribute to each county indicator.
 
 
-Regional Resource Accessibility = $\frac{\sum_{}^{} \frac{1}{distance}}{population}$
+$$\mathcal{A_i} = \frac{\sum\limits_{j=1}^n \frac{1}{dist_{i}}}{pop_i}$$
 
 The summation of the inverse distances between each education or health facility to the county population center was used to weight the closer resources higher than those further away.
 

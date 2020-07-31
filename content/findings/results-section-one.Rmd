@@ -1,6 +1,6 @@
 ---
 title: "Results Section One"
-description: "Accessibility Indicators"
+description: "Recidivism and Grant Search"
 tags: ["R", "geospatial", "app"]
 weight: 2
 draft: false
@@ -14,10 +14,35 @@ h1, h2, h3 {
 }
 ```
 
-### Examples Page
+### Main Findings 
 
-If you want to add in an image on an Rmd file, use this [link here](https://lcolladotor.github.io/2018/03/07/blogdown-insert-image-addin/). It ends up being a little tricky, but as long as you have created a folder to insert your images, you can just use some markdown code or html to insert images in the format you want. 
+####Correctional Education Study Findings:
+Even small levels of improvement can increase an individual's ability to function in the community.
+Page County has low infrastructure which is a barrier to increasing education via:
+remote work, education and mental health care
 
+<center>
+![Page](/images/Recidivism.jpg){width=350px height=200px}
+</center>
+
+
+####Grants Awarded to Page County:
+
+Rural Health Opioid Program
+
+End: Sep 29,2020
+
+$477k
+
+Aims to enhance health care delivery in the Delta Region through intensive technical assistance to providers.
+Page Alliance For Community Acton Substance Abuse Prevention Coalition
+
+
+Ends: Sep 29, 2020
+
+$250K
+
+Aims to increase the capacity of community coalitions to reduce substance abuse, and over time, to reduce substance abuse among adults through strengthening collaboration among communities, public and private entities.
 ### Centering images  
 
 ![](/findings/results-section-one_files/hugo.png){style="width:20%; display: block; margin-left: auto; margin-right: auto;"}
