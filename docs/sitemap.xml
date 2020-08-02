@@ -15,6 +15,18 @@
   </url>
   
   <url>
+    <loc>/findings/isochrones/hospitals__virginia_shp/read/</loc>
+  </url>
+  
+  <url>
+    <loc>/findings/isochrones/read/</loc>
+  </url>
+  
+  <url>
+    <loc>/findings/isochrones/virginiashapefiles/read/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/app/</loc>
   </url>
   

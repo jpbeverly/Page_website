@@ -217,9 +217,14 @@ $(document).ready(function(){
 
     <br> <div class="text-justify">
 <script src="../../rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
-<script src="../../rmarkdown-libs/d3/d3.min.js"></script>
-<link href="../../rmarkdown-libs/collapsibleTree/collapsibleTree.css" rel="stylesheet" />
-<script src="../../rmarkdown-libs/collapsibleTree-binding/collapsibleTree.js"></script>
+<script src="../../rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="../../rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="../../rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="../../rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="../../rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
 
 
 <style type="text/css">
@@ -228,43 +233,51 @@ h1, h2, h3 {
   text-align: center;
 }
 </style>
-<div id="main-findings" class="section level3">
-<h3>Main Findings</h3>
-<div id="correctional-education-study-findings" class="section level4">
-<h4>Correctional Education Study Findings:</h4>
-<p>Even small levels of improvement can increase an individual's ability to function in the community. Page County has low infrastructure which is a barrier to increasing education via: remote work, education and mental health care</p>
-<center>
-<img src="../../images/Recidivism.jpg" alt="Page" width="350" height="200" />
+<div id="main-findings" class="section level2">
+<h2>Main Findings</h2>
+<p>Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.</p>
+<div id="recidivism" class="section level3">
+<h3>Recidivism</h3>
+<p>While recidivism and even substance abuse data are scarce, our research team used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia.</p>
 </center>
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed">
+<script src="https://public.flourish.studio/resources/embed.js"></script>
 </div>
-<div id="grants-awarded-to-page-county" class="section level4">
-<h4>Grants Awarded to Page County:</h4>
-<p>Rural Health Opioid Program</p>
-<p>End: Sep 29,2020</p>
-<p>$477k</p>
-<p>Aims to enhance health care delivery in the Delta Region through intensive technical assistance to providers. Page Alliance For Community Acton Substance Abuse Prevention Coalition</p>
-<p>Ends: Sep 29, 2020</p>
-<p>$250K</p>
-<p>Aims to increase the capacity of community coalitions to reduce substance abuse, and over time, to reduce substance abuse among adults through strengthening collaboration among communities, public and private entities. ### Centering images</p>
-<div class="figure">
-<img src="../../findings/results-section-one_files/hugo.png" style="width:20%; display: block; margin-left: auto; margin-right: auto;" />
-
+<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed">
+<script src="https://public.flourish.studio/resources/embed.js"></script>
+</div>
+<p>As can be seen from the incarceration data, incarceration rates in Page County are relatively high compared to neighboring counties and even the state average.</p>
+<center>
+<img src="../../images/substance_arrests.png" alt="Page" width="600" height="350" />
+</center>
+<p>While the substance abuse arrest data may be indicative of many factors including law and law enforcement practices, the rural areas of Virginia can be seen to have higher substance abuse arrest rates. This may be indicative of growing substance abuse problems in rural areas which is supported by other studies in the literature (Pullen and Oser, 2014; Schoeneberger et al., 2006).</p>
+</div>
+<div id="grant-search" class="section level3">
+<h3>Grant Search</h3>
+<p>In addition to these findings potential resources including grant funding and recidivism programs can be found below:</p>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"],["Pew Charitable Trusts, Robert Wood Johnson Foundation","Ford Family Foundation","Foundation for Rural Serivce","Community Opioid Response and Evaluation project","The Christopher D. Smithers Foundation","Recovery Housing in Rural Communities","Ways to Safer Opioid Use Training","Alcohol and Other Substance Use Research Education Programs for Health Professionals","Rural Health and Safety Education Competitive Grants Program","Pilot and Feasibility Studies in Preparation for Drug and Alcohol Abuse Prevention Trials","Choice Neighborhoods Planning Grants NOFA","BJA FY 20 State, Local, Tribal, and Territorial Information Sharing Technical Assistance Program","RESTORE Act Direct Component - Construction and Real Property Activities","RESTORE Act Direct Component-- Non-Construction Activities","FY 2020 EDA Public Works and Economic Adjustment Assistance Programs including CARES Act Funding","Renewable Energy Systems and Energy Efficiency Improvements Program","Implementation of the National Evaluation System for Health Technology (NEST) Coordinating Center (CC)"],["Other","Other","Other","Other","Other","Substance Abuse and Mental Health Services Administration, U.S. Department of Agriculture, U.S. Department of Health and Human Services, USDA Rural Housing Service","American Public Health Association, U.S. Department of Health and Human Services","National Institute on Alcohol Abuse and Alcoholism, National Institute on Drug Abuse, National Institutes of Health, U.S. Department of Health and Human Services","National Institute of Food and Agriculture, U.S. Department of Agriculture","Pilot and Feasibility Studies in Preparation for Drug and Alcohol Abuse Prevention Trials","Department of Housing and Urban Development","Bureau of Justice Assistance","U.S. Dept. of Treasury RESTORE Act Program","U.S. Dept. of Treasury RESTORE Act Program","Economic Development Administration","Business and Cooperative Programs","Food and Drug Administration"],["https://www.ruralhealthinfo.org/funding/4730","https://www.tfff.org/what-we-do/vital-rural-communities/community-economic-development-0","https://www.frs.org/programs/grant-program/community-grant","https://www.pewtrusts.org/en/projects/substance-use-prevention-and-treatment-initiative/about/funding-opportunities","https://smithersfoundation.org/grants/","https://www.usda.gov/media/press-releases/2019/02/15/usda-and-hhs-partner-create-recovery-housing-rural-communities","https://health.gov/hcq/training-pathways.asp","https://grants.nih.gov/grants/guide/pa-files/PAR-19-207.html","https://nifa.usda.gov/funding-opportunity/rural-health-and-safety-education-competitive-grants-program-rhse","https://grants.nih.gov/grants/guide/pa-files/PA-18-775.html","ChoiceNeighborhoods@hud.gov","support@grants.gov","help@grantsolutions.gov","support@grants.gov","http://www.eda.gov/contact/","maureen.hessel@wdc.usda.gov","kiara.fowler@fda.hhs.gov"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Opportunity Name<\/th>\n      <th>Agency Name<\/th>\n      <th>Other Info<\/th>\n      <th>Misc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":7,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"lengthMenu":[7,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="programs" class="section level3">
+<h3>Programs:</h3>
+<p><a href="https://virginiareentry.org/">VIRGINIA's FUTURE DIRECTIONS IN RE-ENTRY</a></p>
+<p><a href="http://vacares.org/">Virginia CARES</a></p>
+<p><a href="https://goodwillvirginia.org/get-job-ready/education-for-employment/goodpath/">GoodPath</a></p>
+<p><a href="http://www.bridgingthegapinvirginia.org/services.html">Bridging The Gap In Virginia</a></p>
+<p><a href="https://southside.edu/campus-within-walls">SVCC’s Campus Within Walls</a></p>
+<p><a href="https://www.pep.org/icic-report/">PRISON ENTREPRENEURSHIP PROGRAM (PEP)</a></p>
+<p><a href="https://communitybridgesaz.org/fact/">COMMUNITY BRIDGES FACT TEAM</a></p>
+<p><a href="http://www.delanceystreetfoundation.org/">DELANCEY STREET FOUNDATION</a></p>
+<p><a href="https://saferfoundation.org/">SAFER FOUNDATION</a></p>
+<p><a href="https://thelastmile.org/">THE LAST MILE</a></p>
 </div>
 </div>
-</div>
-<div id="placing-images-side-by-side" class="section level3">
-<h3>Placing images side-by-side</h3>
-<p><img src="../../findings/results-section-one_files/hugo.png" width="150"/> <img src="../../findings/results-section-one_files/rmarkdown.png" width="150"/> <img src="../../findings/results-section-one_files/min_night.png" width="175"/> <img src="../../findings/results-section-one_files/netlify.png" width="175"/></p>
-</div>
-<div id="embedding-shiny-apps" class="section level3">
-<h3>Embedding Shiny Apps</h3>
-<iframe src="https://uva-sdad.shinyapps.io/gates-dashboard/?showcase=0" width="672" height="400px">
-</iframe>
-</div>
-<div id="embedding-r-code" class="section level3">
-<h3>Embedding R code</h3>
-<div id="htmlwidget-1" style="width:672px;height:480px;" class="collapsibleTree html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1">{"x":{"data":{"name":"OSS","children":[{"name":"Academic","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"login"},{"name":"email"},{"name":"organization"},{"name":"company"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"orcid","children":[{"name":"orcid","children":[{"name":"orcid"}]}]},{"name":"hipolabs","children":[{"name":"hipolabs","children":[{"name":"institution"},{"name":"country"},{"name":"domains"}]}]},{"name":"NCSES","children":[{"name":"Survey of Federal Science and Engineering Support 2018","children":[{"name":"institution"},{"name":"rank"},{"name":"all federal obligations"},{"name":"R&D"}]},{"name":"Higher Education Research and Development Survey 2018","children":[{"name":"institution"},{"name":"rank"},{"name":"R&D expenditure"},{"name":"federal gov fund"},{"name":"state local gov fund"},{"name":"institution funds"}]}]}]},{"name":"Business","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"contributor"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"Enterprise-Driven OSS","children":[{"name":"cohort project details","children":[{"name":"cohort project details"}]},{"name":"enterprise project","children":[{"name":"enterprise project"}]}]},{"name":"forbes","children":[{"name":"Fortune's Annual Ranking of Companies 2018 (US 1000)","children":[{"name":"Fortune's Annual Ranking of Companies 2018 (US 1000)"}]},{"name":"Fortune's Annual Ranking of Companies 2019 (US 1000)","children":[{"name":"Fortune's Annual Ranking of Companies 2019 (US 1000)"}]},{"name":"Fortune's Annual Ranking of Companies 2020 (Global 2000)","children":[{"name":"Fortune's Annual Ranking of Companies 2020 (Global 2000)"}]}]},{"name":"Global Legal Entity Identifier Foundation (GLEIF)","children":[{"name":"GLEIF","children":[{"name":"country"}]}]},{"name":"Data Hub","children":[{"name":"email domains","children":[{"name":"domain"},{"name":"type"},{"name":"organization"}]}]},{"name":"2020 US Business Database","children":[{"name":"2020 US Business Database","children":[{"name":"2020 US Business Database"}]}]}]},{"name":"Government","children":[{"name":"github","children":[{"name":"commits","children":[{"name":"commits"}]}]},{"name":"System for Award Management (SAM)","children":[{"name":"System for Award Management (SAM)","children":[{"name":"parent2"},{"name":"fhorgtype"},{"name":"fhorgname"}]}]},{"name":"us gov","children":[{"name":"Federally Funded R&D Centers","children":[{"name":"ffrdc name"},{"name":"agency"}]},{"name":"A-Z Index","children":[{"name":"agency"},{"name":"gov branch"},{"name":"parent agency"},{"name":"parent agency parent"}]}]},{"name":"code gov","children":[{"name":"code gov","children":[{"name":"code gov"}]}]},{"name":"crowdsourced","children":[{"name":"crowdsourced","children":[{"name":"crowdsourced"}]}]}]},{"name":"International","children":[{"name":"github","children":[{"name":"contributor","children":[{"name":"contributor"}]},{"name":"commits","children":[{"name":"commits"}]}]},{"name":"mindmap","children":[{"name":"mindmap","children":[{"name":"mindmap"}]}]}]}]},"options":{"hierarchy":["Sector","DataSource","SubData","Variables"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":10,"tooltip":false,"collapsed":true,"zoomable":true,"margin":{"top":20,"bottom":20,"left":40,"right":305},"fill":"#E57200"}},"evals":[],"jsHooks":[]}</script>
+<div id="references" class="section level2">
+<h2>References:</h2>
+<p>Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.</p>
+<p>Hanson, R. K. (2009). The psychological assessment of risk for crime and violence. Canadian Psychology/Psychologie canadienne, 50(3), 172.</p>
+<p>Håkansson, A., Berglund, M. Risk factors for criminal recidivism – a prospective follow-up study in prisoners with substance abuse. BMC Psychiatry 12, 111 (2012). <a href="https://doi.org/10.1186/1471-244X-12-111" class="uri">https://doi.org/10.1186/1471-244X-12-111</a> Pullen, E., &amp; Oser, C. (2014). Barriers to substance abuse treatment in rural and urban communities: counselor perspectives. Substance use &amp; misuse, 49(7), 891–901. <a href="https://doi.org/10.3109/10826084.2014.891615" class="uri">https://doi.org/10.3109/10826084.2014.891615</a></p>
+<p>Schoeneberger, M. L., Leukefeld, C. G., Hiller, M. L., &amp; Godlaski, T. (2006). Substance abuse among rural and very rural drug users at treatment entry. The American Journal of Drug and Alcohol Abuse, 32(1), 87-110.</p>
 </div>
 </div>
 
