@@ -8,28 +8,164 @@ output: html_document
 ---
 
 ### Main Findings 
+####Health and Education Accessibility Scores 
+Economic Vulnerability may also be affected by health and education accessibility. Those with access to health and education facilities were less likely to be poor and vulnerable (Gil et al., 2014). We measured health and educational access separately in each Virginia County using multiple indicators. The health indicators correspond to hospitals, clinics, counseling centers and other health facilities that are immediately in aid of a vulnerable population. The education indicators correspond to colleges, universities, career training facilities and other educational and training sources for continued education after high school. 
+ 
+To calculate a regional accessibility indicator at the county level, we first determined the location within each county that we used to measure the distance to health and education facilities. Instead of using the geographic center of each county, we used the geometric center weighted by population density. This is especially important for large counties where the bulk of the population may reside in only a small part of the county. The population weighted centroid was constructed using the [Centers of Population for the 2010 Census.](https://www.census.gov/geographies/reference-files/2010/geo/2010-centers-population.html).
+ 
+Only health and education centers within a certain radius of the center of the county were taken in constructing the health and education access indices. Travel beyond a certain distance to health and education resources is unlikely especially with lack of access to adequate transportation.
+For each Virginia county, only facilities within a specified radius would contribute to each county indicator.
+
+
+$$\mathcal{A_i} = \frac{\sum\limits_{j=1}^n \frac{1}{dist_{i}}}{pop_i}$$
+where Ai is ...
+
+The summation of the inverse distances between each education or health facility to the county population center was used to weight the closer resources higher than those further away.
+
+The health and education access index variables are essentially a count of health and education facilities within the specified radius weighted by the inverse distance to each facility. Facilities that are closer to the population center result in a higher access index. This population weighting accounts for major differences in rural, suburban, and urban areas. 
+
+<center>
+![Page](/findings/spatialMaps/EdAccess15.png){width=600px height=450px}
+</center>
+
+<center>
+![Page](/findings/spatialMaps/HealthAccess15.png){width=600px height=450px}
+</center>
 
 ####Isochrone Mapping
+The following travel isochrones show areas of Page County and surrounding counties that are within a sixty-minute drive of health or education facility.  
+```{r Health Services, echo = FALSE, message = FALSE, warning = FALSE, verbose = FALSE}
+library(RColorBrewer)
+#library(traveltime)
+library(tidyverse)
+library(tidycensus)
+library(sf)
+#library(osmdata)
+library(leaflet)
+library(sp)
+library(purrr)
+library(mapview)
+#library(osrm)
+#library(rmapzen)
+#library(rgdal)
+library(ggplot2)
+library(scales)
+library(readxl)
+#require(xlsx)
+
+# Mapping
+acs_Page <- readRDS("isochrones/acs_Page.RDS")
+acs_Page_area <- readRDS("isochrones/acs_Page_area.RDS")
+va_sf <-  readRDS("isochrones/va_sf.RDS")
+page_outline <- readRDS("isochrones/page_outline.RDS")
+
+
+# Read in Virginia shape file
+
+mapVA  <- st_read("isochrones/VirginiaShapeFiles/tl_2019_51_tract.shp",
+                  stringsAsFactors = FALSE, quiet = TRUE)
+
+map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
+
+mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1)
+all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0)
+map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0)
+map_page <- all_outline+mapview_for_page +map_page_outline
+
+
+#getting all health_service points
+health_service <- read_excel("isochrones/health_page.xlsx", sheet = "Sheet1")
+cor_health_service <- health_service[-c(5,60),]
+coordinates(cor_health_service) <-c("Longitude", "Latitude")
+proj4string(cor_health_service) <-CRS("+proj=longlat +datum=WGS84")
+map_for_points <- mapview(cor_health_service, cex =2,color="orange", col.regions= "orange", layer.name= "Health Services")
+#map_for_points
+
+map_with_all_points <- map_page+map_for_points
+
+
+health_iso_20_index_2 <- readRDS("isochrones/health_iso_20_index_2.RDS")
+health_iso_20_index_60 <- readRDS("isochrones/health_iso_20_index_60.RDS")
+
+colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
+
+st_crs(health_iso_20_index_2) = 4326
+st_crs(health_iso_20_index_60) = 4326
+
+m_2 = mapview(health_iso_20_index_2, layer.name = "20 minute isochrone", col.regions = colors[10])
+m_60 = mapview(health_iso_20_index_60, layer.name = "20 minute isochrone", col.regions = colors[10])
+
+cor_two_health_service <- health_service[c(2,60),]
+coordinates(cor_two_health_service) <-c("Longitude", "Latitude")
+proj4string(cor_two_health_service) <-CRS("+proj=longlat +datum=WGS84")
+map_for_two_points <- mapview(cor_two_health_service, cex =2,color="red", col.regions= "red", layer.name = "Health Service with Distance")
+#map_for_two_points
+
+
+m_last<- map_with_all_points+m_2+m_60+map_for_two_points
+
+m_last
+
+```
+ 
+ 
+ This is mapp 2. 
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, verbose = FALSE}
+#HOSPITALS getting all health_service points
+
+hospitals <- st_read("isochrones/Hospitals__Virginia_shp/Hospitals__Virginia_.shp",quiet = TRUE)
+
+hospitals <- hospitals %>% rename(Longitude = POINT_X)
+hospitals <- hospitals %>% rename(Latitude = POINT_Y)
+
+filtered_hospitals <- hospitals  %>%
+  filter(Zip %in% c("22851", "22650", "22827", "22849", "22835", # Page
+                    "22801", "22802", "22807", # Harrisonburg
+                    "22626", "22842", "22810", "22845", "22824",
+                    "22660", "22641", "22657", "22644", "22847",
+                    "22652", "22664", # Shenandoah
+                    "22968", "22935", "22965", "22968", "22935",
+                    "22973", # Greene
+                    "22727" # Part of Madison
+  ))
+
+map_for_points2 <- mapview(filtered_hospitals, cex =2,color="orange", col.regions= "orange", layer.name= "Hospitals")
+#map_for_points
+
+(map_with_all_points2 <- map_page+map_for_points2)
+
+hospitals_iso_20_index_1 <- readRDS("isochrones/hospitals_iso_20_index_1.RDS")
+hospitals_iso_20_index_2 <- readRDS("isochrones/hospitals_iso_20_index_2.RDS")
+hospitals_iso_20_index_3 <- readRDS("isochrones/hospitals_iso_20_index_3.RDS")
 
 
 
-####Spatial Variables
+colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
+
+m2_1 = mapview(hospitals_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10])
+#m2_1
+m2_2 = mapview(hospitals_iso_20_index_2, layer.name = "20 minute isochrone 2", col.regions = colors[10])
+#m2_2
+m2_3 = mapview(hospitals_iso_20_index_3, layer.name = "20 minute isochrone 3", col.regions = colors[10])
+#m2_3
+
+(m_last2<- map_with_all_points2+m2_1+ m2_2 + m2_3)
 
 
-<center>
-![Page](/findings/spatialMaps/EdAccess15.png){width=350px height=200px}
-</center>
+m_last2
+```
 
-<center>
-![Page](/findings/spatialMaps/HealthAccess15.png){width=350px height=200px}
-</center>
+
+
+
 ### Conclusion and Policy Implications 
 
 [Here you could highlight the main takeaways and the potential policy implications of your findings.] 
 
 ### References 
 
-[List your references here using APA format (or at least standardize all of the references using the same format).]
+[Gill, I. S., Revenga, A., & Zeballos, C. (2016). Grow, invest, insure: A game plan to end extreme poverty by 2030. The World Bank.]
 
 
 

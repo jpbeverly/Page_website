@@ -14,150 +14,73 @@ h1, h2, h3 {
 }
 ```
 
-### Main Findings 
+## Main Findings 
 
-####Correctional Education Study Findings:
-Even small levels of improvement can increase an individual's ability to function in the community.
-Page County has low infrastructure which is a barrier to increasing education via:
-remote work, education and mental health care
+Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. 
+Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders. 
 
-<center>
-![Page](/images/Recidivism.jpg){width=350px height=200px}
+###Recidivism
+While recidivism and even substance abuse data are scarce, our research team used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
+
 </center>
 
-
-####Grants Awarded to Page County:
-
-Rural Health Opioid Program
-
-End: Sep 29,2020
-
-$477k
-
-Aims to enhance health care delivery in the Delta Region through intensive technical assistance to providers.
-Page Alliance For Community Acton Substance Abuse Prevention Coalition
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
-Ends: Sep 29, 2020
+<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-$250K
+As can be seen from the incarceration data, incarceration rates in Page County are relatively high compared to neighboring counties and even the state average. 
 
-Aims to increase the capacity of community coalitions to reduce substance abuse, and over time, to reduce substance abuse among adults through strengthening collaboration among communities, public and private entities.
-### Centering images  
+<center>
+![Page](/images/substance_arrests.png){width=600px height=350px}
+</center>
 
-![](/findings/results-section-one_files/hugo.png){style="width:20%; display: block; margin-left: auto; margin-right: auto;"}
+While the substance abuse arrest data may be indicative of many factors including law and law enforcement practices, the rural areas of Virginia can be seen to have higher substance abuse arrest rates. This may be indicative of growing substance abuse problems in rural areas which is supported by other studies in the literature (Pullen and Oser, 2014; Schoeneberger et al., 2006).
 
-### Placing images side-by-side
+###Grant Search
+In addition to these findings potential resources including grant funding and recidivism programs can be found below:
 
-<img src="/findings/results-section-one_files/hugo.png" width="150"/> <img src="/findings/results-section-one_files/rmarkdown.png" width="150"/> <img src="/findings/results-section-one_files/min_night.png" width="175"/> <img src="/findings/results-section-one_files/netlify.png" width="175"/>
+```{r echo = FALSE, warning = FALSE}
+library(DT)
 
-### Embedding Shiny Apps
-
-```{r, echo=FALSE, fig.fullwidth=TRUE}
-knitr::include_app('https://uva-sdad.shinyapps.io/gates-dashboard/')
-```
-
-### Embedding R code
-
-```{r, warning=FALSE, message=FALSE, echo=FALSE}
-library(collapsibleTree)
-library(tidyverse)
-OSS <- data.frame(
-    Sector = c(
-        "Academic", "Academic","Academic", "Academic", "Academic", "Academic","Academic","Academic","Academic","Academic","Academic","Academic",
-        "Academic","Academic","Academic","Academic","Academic","Academic","Academic",
-        
-        "Business","Business","Business","Business","Business", "Business", "Business", 
-        "Business", "Business", "Business","Business","Business", "Business",
-        
-        "Government", "Government","Government", "Government","Government","Government",
-        "Government", "Government", "Government","Government", "Government", "Government",
-        
-        "International","International","International"
-    ),
-    DataSource = c(
-      #academic
-        "github","github", "github","github","github",
-        "orcid", 
-        "hipolabs", "hipolabs","hipolabs",
-        "NCSES","NCSES", "NCSES", "NCSES","NCSES", "NCSES", "NCSES","NCSES", "NCSES","NCSES",
-        
-      #business
-      "github","github", 
-      "Enterprise-Driven OSS", "Enterprise-Driven OSS",  
-      "forbes",  "forbes", "forbes", 
-      "Global Legal Entity Identifier Foundation (GLEIF)", 
-      "Data Hub", "Data Hub", "Data Hub", 
-      "2020 US Business Database",
-      
-    #gov  
-        "github","github", "System for Award Management (SAM)", "System for Award Management (SAM)",
-    "System for Award Management (SAM)","us gov","us gov","us gov","us gov","us gov","us gov", "code gov", "crowdsourced",
-     
-     #international
-       "github","github", "mindmap"
-    ),
-    SubData = c(
-      #academic
-        "contributor","contributor","contributor","contributor","commits", 
-        "orcid", 
-        "hipolabs", "hipolabs","hipolabs",
-        "Survey of Federal Science and Engineering Support 2018", 
-        "Survey of Federal Science and Engineering Support 2018", "Survey of Federal Science and Engineering Support 2018", 
-        "Survey of Federal Science and Engineering Support 2018", "Higher Education Research and Development Survey 2018", 
-        "Higher Education Research and Development Survey 2018", "Higher Education Research and Development Survey 2018", 
-        "Higher Education Research and Development Survey 2018", "Higher Education Research and Development Survey 2018", 
-        "Higher Education Research and Development Survey 2018", 
-        
-      #business
-        "contributor", "commits", 
-      "cohort project details", "enterprise project",
-      "Fortune's Annual Ranking of Companies 2018 (US 1000)", 
-      "Fortune's Annual Ranking of Companies 2019 (US 1000)", 
-      "Fortune's Annual Ranking of Companies 2020 (Global 2000)", 
-      "GLEIF", 
-      "email domains",  "email domains", "email domains", 
-      "2020 US Business Database",
-        
-      #gov
-        "contributor", "commits", 
-        "System for Award Management (SAM)","System for Award Management (SAM)",
-      "System for Award Management (SAM)","Federally Funded R&D Centers", "Federally Funded R&D Centers", 
-        "A-Z Index","A-Z Index", "A-Z Index","A-Z Index",
-        "code gov", "crowdsourced", 
-    
-      #international    
-        "contributor", "commits", "mindmap"
-    ),
-    Variables = c(
-        "login", "email","organization","company","commits",
-        "orcid", 
-        "institution",
-        "country",
-        "domains",
-        "institution", "rank","all federal obligations" , "R&D", "institution", "rank", 
-        "R&D expenditure", "federal gov fund", "state local gov fund", "institution funds",
-        
-        "contributor", "commits", 
-        "cohort project details", "enterprise project", 
-        "Fortune's Annual Ranking of Companies 2018 (US 1000)", "Fortune's Annual Ranking of Companies 2019 (US 1000)", "Fortune's Annual Ranking of Companies 2020 (Global 2000)", 
-        "country", 
-        "domain", "type", "organization", "2020 US Business Database",
-        
-        "contributor", "commits",  "parent","fhorgtype", "fhorgname", "ffrdc name", "agency", "agency", "gov branch", "parent agency", "parent agency parent", "code gov", "crowdsourced", 
-        
-        "contributor", "commits", "mindmap"
-    )
-)
-
-# Collapsible Tree
-                                    
-collapsibleTree(OSS, 
-                c("Sector", "DataSource", "SubData", "Variables"), 
-                collapsed = T,
-                fill ="#E57200"
-)
+grants <- read.csv("Grants_Page.csv", header = T)
+colnames(grants) <- c("Opportunity Name", "Agency Name", "Other Info", "Misc")
+DT::datatable(grants, escape = FALSE, options = list(pageLength = 7))
 
 ```
+
+###Programs:
+[VIRGINIA's FUTURE DIRECTIONS IN RE-ENTRY](https://virginiareentry.org/)
+
+[Virginia CARES](http://vacares.org/)
+
+[GoodPath](https://goodwillvirginia.org/get-job-ready/education-for-employment/goodpath/)
+
+[Bridging The Gap In Virginia](http://www.bridgingthegapinvirginia.org/services.html) 
+
+[SVCC’s Campus Within Walls](https://southside.edu/campus-within-walls)
+
+[PRISON ENTREPRENEURSHIP PROGRAM (PEP)](https://www.pep.org/icic-report/)
+
+[COMMUNITY BRIDGES FACT TEAM](https://communitybridgesaz.org/fact/)
+
+[DELANCEY STREET FOUNDATION](http://www.delanceystreetfoundation.org/)
+
+[SAFER FOUNDATION](https://saferfoundation.org/)
+
+[THE LAST MILE](https://thelastmile.org/)
+
+##References:
+Dadashazar, N. (2017). Offender recidivism: A quantitative study of motivational risk factors and counseling.
+
+Hanson, R. K. (2009). The psychological assessment of risk for crime and violence. Canadian Psychology/Psychologie canadienne, 50(3), 172.
+
+Håkansson, A., Berglund, M. Risk factors for criminal recidivism – a prospective follow-up study in prisoners with substance abuse. BMC Psychiatry 12, 111 (2012). https://doi.org/10.1186/1471-244X-12-111
+Pullen, E., & Oser, C. (2014). Barriers to substance abuse treatment in rural and urban communities: counselor perspectives. Substance use & misuse, 49(7), 891–901. https://doi.org/10.3109/10826084.2014.891615
+
+Schoeneberger, M. L., Leukefeld, C. G., Hiller, M. L., & Godlaski, T. (2006). Substance abuse among rural and very rural drug users at treatment entry. The American Journal of Drug and Alcohol Abuse, 32(1), 87-110.
+
+
+
 
 

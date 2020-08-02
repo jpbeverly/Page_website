@@ -5,7 +5,10 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+#blogdown::serve_site()
+#blogdown::stop_server()
 ```
+
 
 ### 2020 Page County Summer Project {style=text-align:center}
 
@@ -14,21 +17,6 @@ Page County suffers from some of the highest rates of recidivism in the state of
 
 ![Virginia](/images/PageCounty.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
 
-
-While Virginia has the lowest recidivism rate in the U.S., Page County has the highest recidivism rate in the state.
-Derived from the Latin recidivus meaning "recurring", recidivism means "a falling back" usually implying into bad habits.
-
-
-<center>
-![Page](/images/prison.jpg){width=350px height=200px}
-</center>
-
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-
-<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-
 ###Project Goals 
 
 
@@ -36,7 +24,38 @@ Derived from the Latin recidivus meaning "recurring", recidivism means "a fallin
 
 2. $\textbf{Identify}$ ways to enhance the community capital in Page County.
 
-3. $\textbf{Create}$ a vulnerability score to identify factors and areas vulnerable to recidivism and intergeneration poverty issues. 
+3. $\textbf{Identify}$ the level of Page County vulnerability compared to other counties in Virginia.
 
+ 
+### Our Approach
+
+Our research team used the Community Capital and Ecological frameworks to combine datasets of publicly available economic and social information related to economic vulnerability. The community capital framework focuses on seven types of capital in order to analyze community economic development. The seven types include:
+
+1. Natural capital: Community environment (rivers, lakes, forests, water etc)
+2. Cultural capital: Cultural and Ethnic Factors (festivals, influences, traditions, etc)
+3. Human capital: Residents (education, health, skills, etc)
+4. Social capital: Community Connections (people and organization connections)
+5. Political capital: Polices and Government (law, government officials, enforcement etc.)
+6. Financial capital: Financial Resources (investment, business development, entrepreneurship etc.)
+7. Built capital: Infrastructure (telecommunications, high ways, powerplants, businesses etc.)
+
+The six types of capital in Figure 1 represent the categories most related to our project goals in Page County. 
+
+<center>
+![Approach](/images/capital.png){width=300px height=400px}
+</center>
+
+
+
+We then connected the community capital framework for analyzing community development to the Ecological Framework. The Ecological Framework postulates that some people are at higher risk or more vulnerable because of multiple factors at different levels. 
+The four main levels outlined in the framework include: individual, relationships, community and societal. Factors at each level may affect the level of an individual’s vulnerability.
+ 
+ In figure 2, we linked factors of Economic Vulnerability by color to the four main levels of the ecological framework. 
+
+<center>
+![Approach](/images/vulnerable.png){width=500px height=400px}
+</center>
+
+The data discovered from these frameworks were used to construct spatial measures of accessibility to education and health centers as well as a composite index of vulnerability at the county level. The composite index includes demographic, economic, social and spatial factors of vulnerability. By ranking counties in vulnerability, stakeholders can visualize how Page County measures up against other counties in the state and use the information to apply and acquire grants and programs to help the vulnerable population in Page County. 
 
 
