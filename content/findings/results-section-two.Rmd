@@ -278,7 +278,7 @@ sf_work_dev_center <- st_as_sf(workforce_dev_center_data, coords = c("Longitude"
 #coordinates(cor_workforce_dev_center_data) <-c("Longitude", "Latitude")
 #proj4string(cor_workforce_dev_center_data) <-CRS("+proj=longlat +datum=WGS84")
 map_for_points <- mapview(sf_work_dev_center, cex =2,color="orange", col.regions= "orange", layer.name= "Workforce Development Centers")
-map_for_points
+#map_for_points
 
 map_with_all_points <- map_page+map_for_points
 
