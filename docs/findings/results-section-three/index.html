@@ -199,14 +199,6 @@ $(document).ready(function(){
 
     
     
-    <a href="../../tags/r">
-        <kbd class="item-tag"> R </kbd>
-    </a>
-    
-    <a href="../../tags/networks">
-        <kbd class="item-tag"> networks </kbd>
-    </a>
-    
 
 </div>
 
@@ -216,22 +208,28 @@ $(document).ready(function(){
 
 <div id="main-findings" class="section level2">
 <h2>Main Findings</h2>
-<div id="factor-analysis" class="section level3">
-<h3>Factor Analysis</h3>
-</div>
-<div id="composite-vulnerability-score" class="section level3">
-<h3>Composite Vulnerability Score</h3>
-<p>Page county is a rural county in the Valley region in Virginia. While factor analysis and composite index construction have been done on different scales, we are limited by our data to the county level. However, other social and economic modeling approaches were applied to county level data and were developed to address short comings of predecessor models (Cutter et al., 2003).</p>
-<p>The social and economic vulnerability index (SEVI) is constructed using county level data on poverty rate, ethnicity, spoken language, physical and mental disabilities, housing type, incarceration rates, drug arrest rates and access to private/public transportation. All of these factors can affect the level of vulnerability in a county. The formula for the SEVI was created as:</p>
+<div id="factor-analysis-and-composite-vulnerability-score" class="section level3">
+<h3>Factor Analysis and Composite Vulnerability Score</h3>
+<p>Page county is a rural county in the Valley region in Virginia. While factor analysis and composite index construction have been done on different scales, we are limited by our data to the county level. However, other social and economic modeling approaches were applied to county level data and were developed to address short comings of predecessor models (Cutter et al., 2003). In factor analysis framework, the composite variable is essentially a weighted average of the underlying access and demographic variables. Factor analysis groups together individual indicators that are collinear to form a composite indicator that captures as much of the information common to individual indicators as possible. In essence, it creates unobservable factors from observable data.</p>
+<p>The social and economic vulnerability index (SEVI) below is constructed using county level data on poverty rate, ethnicity, education level, unemployment, SNAP benefits, health insurance, age, and married status. All of these factors can affect the level of vulnerability in a county.</p>
+<p>We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had approximate 24%, 21%, and 12.2% of the overall variation respectively and cumulatively 57% of overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the square of the factor loadings as our weight when constructing the composite.</p>
 <p>Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.</p>
 <p><span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span></p>
 <p>where <span class="math inline">\(\mathcal{F}\)</span> is the Composite Score, <span class="math inline">\(X^s\)</span> is the Standardized design matrix, <span class="math inline">\(F^T\)</span> is the Matrix of Factor Scores and <span class="math inline">\(\textbf{w}\)</span> is the Proportion of Variance Explained.</p>
-<p>The SEVI is shown in Figure 3 where lighter colors represent more vulnerable populations. The map shows that across NOVA, and even within Loudon County, there are important differences in social and economic vulnerability. Socially and economically vulnerable areas are often located close to areas with low vulnerability. However, the SEVI is only one side of the food insecurity story. Food insecurity is also affected by access to food in the local area. Nonetheless, the SEVI provides a means of assessing areas that may be in need of targeted assistance. ### Conclusion and Policy Implications</p>
-<p>[Here you could highlight the main takeaways and the potential policy implications of your findings.]</p>
+<p>The SEVI is shown in the figure below where darker colors represent more vulnerable populations. The map shows that across Virginia, there are important differences in social and economic vulnerability. Page County especially stands out for its contrast in vulnerablity to the rest of the Northern Virginia Region. While Nova ranks low in vulnerability compared to the rest of the state, the rural regions and Page County specifically ranks medium high to high in vulnerability.</p>
+</div>
+<div id="conclusion-and-policy-implications" class="section level3">
+<h3>Conclusion and Policy Implications</h3>
+<p>While he SEVI is only one measure in assessing areas that may be in need of targeted assisstance, the data displayed from the SEVI as well as the other measures discussed provide evidence that Page County is an outlier in its region of the state.</p>
+<center>
+<img src="../../images/comp_index_map.png" alt="Page" width="500" height="350" />
+</center>
 </div>
 <div id="references" class="section level3">
 <h3>References</h3>
-<p>[List your references here using APA format (or at least standardize all of the references using the same format).]</p>
+<p>Hartmann, K., Krois, J., Waske, B. (2018): E-Learning Project SOGA: Statistics and Geospatial Data Analysis. Department of Earth Sciences, Freie Universitaet Berlin.</p>
+<p>Johnson, R.A and Wichern, D.W, Applied Multivariate Statistical Analysis (6th ed). Pearson, 2007. Ch 9.</p>
+<p>Mulaik, S. A. (2009). Foundations of factor analysis. CRC press.</p>
 </div>
 </div>
 </div>
