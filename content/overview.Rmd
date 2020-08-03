@@ -20,16 +20,11 @@ Page County suffers from some of the highest rates of recidivism in the state of
 ###Project Goals 
 
 
-1. $\textbf{Identify}$ and $\textbf{Compare}$ community capital available in Page and surrounding counties.
+Our project goal was to identify community capital in Page County, find ways to enhance that community capital and identify the level of vulnerability compared to other counties in Virginia. 
 
-2. $\textbf{Identify}$ ways to enhance the community capital in Page County.
-
-3. $\textbf{Identify}$ the level of Page County vulnerability compared to other counties in Virginia.
-
- 
 ### Our Approach
 
-Our research team used the Community Capital and Ecological frameworks to combine datasets of publicly available economic and social information related to economic vulnerability. The community capital framework focuses on seven types of capital in order to analyze community economic development. The seven types include:
+Our research team used the Community Capital and Ecological frameworks to combine publicly available economic and social data related to economic vulnerability. The community capital framework focuses on seven types of capital in order to analyze community economic development. The seven types include:
 
 1. Natural capital: Community environment (rivers, lakes, forests, water etc)
 2. Cultural capital: Cultural and Ethnic Factors (festivals, influences, traditions, etc)

@@ -1,7 +1,6 @@
 ---
 title: "Results Section One"
 description: "Recidivism and Grant Search"
-tags: ["R", "geospatial", "app"]
 weight: 2
 draft: false
 output: html_document
@@ -17,28 +16,34 @@ h1, h2, h3 {
 ## Main Findings 
 
 Dadashazar (2017) identified factors including previous incarceration, family relations, employment and education barriers, housing constraints and substance abuse to be associated with increased recidivism. 
-Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders. 
+Hanson (2017) concluded that prior criminal history and substance abuse were among the risk factors for multiple types of recidivism across multiple types of offenders.
 
 ###Recidivism
-While recidivism and even substance abuse data are scarce, our research team used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
+Our team initially began looking into recidivism in Page County and the rest of Virginia. However, recidivism and even substance abuse data are scarce. Focusing on the factors of recidivism mentioned by Dadashazar (2017) and Hanson (2017) we used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
 
-</center>
-
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-
-<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-As can be seen from the incarceration data, incarceration rates in Page County are relatively high compared to neighboring counties and even the state average. 
+The racing incarceration rates below show that incarceratin rates in Page County are relatively high compared to neighboring counties and even the state average. 
 
 <center>
-![Page](/images/substance_arrests.png){width=600px height=350px}
+
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 </center>
 
+Taking a closer look at the comparison of Page County incarceration rates to the average rates in Virinia, we can see that a large gap has developed since the early 2000's.
+
+<center>
+<div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
 While the substance abuse arrest data may be indicative of many factors including law and law enforcement practices, the rural areas of Virginia can be seen to have higher substance abuse arrest rates. This may be indicative of growing substance abuse problems in rural areas which is supported by other studies in the literature (Pullen and Oser, 2014; Schoeneberger et al., 2006).
+</center>
+<center>
+![Page](/images/substance_arrests.png){width=700px height=350px}
+</center>
+
+
 
 ###Grant Search
-In addition to these findings potential resources including grant funding and recidivism programs can be found below:
+In addition to these findings, potential resources including grant funding and recidivism programs can be found below:
 
 ```{r echo = FALSE, warning = FALSE}
 library(DT)
