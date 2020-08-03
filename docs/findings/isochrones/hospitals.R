@@ -306,5 +306,5 @@ m_3
 #  setView(clg_uni_iso_20_index_3$lat,clg_uni_iso_20_index_3$lng, zoom = 9)
 
 
-m_last
+m_last2
 #getting isochrones for page 5,60
