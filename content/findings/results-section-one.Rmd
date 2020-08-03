@@ -21,14 +21,14 @@ Hanson (2017) concluded that prior criminal history and substance abuse were amo
 ###Recidivism
 Our team initially began looking into recidivism in Page County and the rest of Virginia. However, recidivism and even substance abuse data are scarce. Focusing on the factors of recidivism mentioned by Dadashazar (2017) and Hanson (2017) we used the incarceration and substance abuse data to visualize and compare Page County to other counties in Virginia. 
 
-The racing incarceration rates below show that incarceratin rates in Page County are relatively high compared to neighboring counties and even the state average. 
+The racing incarceration rates below show that rates in Page County are relatively high compared to neighboring counties and even the state average. 
 
 <center>
 
 <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3349572" data-url="https://flo.uri.sh/visualisation/3349572/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 </center>
 
-Taking a closer look at the comparison of Page County incarceration rates to the average rates in Virinia, we can see that a large gap has developed since the early 2000's.
+Taking a closer look at the comparison of Page County incarceration rates to the average rates in Virginia, we can see that a large gap has developed since the year 2000..
 
 <center>
 <div class="flourish-embed flourish-chart" data-src="visualisation/3327980" data-url="https://flo.uri.sh/visualisation/3327980/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>

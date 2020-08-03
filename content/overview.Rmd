@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### 2020 Page County Summer Project {style=text-align:center}
 
-Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county. 
+Page County suffers from some of the highest rates of recidivism in the state of Virginia and other intergenerational poverty issues. Page County would like to identify factors and determine ways to increase relative and absolute economic mobility for the vulnerable population in the county. 
 
 
 ![Virginia](/images/PageCounty.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
@@ -20,19 +20,19 @@ Page County suffers from some of the highest rates of recidivism in the state of
 ###Project Goals 
 
 
-Our project goal was to identify community capital in Page County, find ways to enhance that community capital and identify the level of vulnerability compared to other counties in Virginia.
+Our project goal was to identify community capital in Page County, find ways to enhance that community capital, and identify the level of vulnerability compared to other counties in Virginia.
 
 ### Our Approach
 
 Our research team used the Community Capital and Ecological frameworks to combine publicly available economic and social data related to economic vulnerability. The community capital framework focuses on seven types of capital in order to analyze community economic development. The seven types include:
 
-1. Natural capital: Community environment (rivers, lakes, forests, water etc)
-2. Cultural capital: Cultural and Ethnic Factors (festivals, influences, traditions, etc)
-3. Human capital: Residents (education, health, skills, etc)
+1. Natural capital: Community environment (rivers, lakes, forests, water, etc.)
+2. Cultural capital: Cultural and Ethnic Factors (festivals, influences, traditions, etc.)
+3. Human capital: Residents (education, health, skills, etc.)
 4. Social capital: Community Connections (people and organization connections)
-5. Political capital: Polices and Government (law, government officials, enforcement etc.)
-6. Financial capital: Financial Resources (investment, business development, entrepreneurship etc.)
-7. Built capital: Infrastructure (telecommunications, high ways, powerplants, businesses etc.)
+5. Political capital: Polices and Government (law, government officials, enforcement, etc.)
+6. Financial capital: Financial Resources (investment, business development, entrepreneurship, etc.)
+7. Built capital: Infrastructure (telecommunications, high ways, powerplants, businesses, etc.)
 
 The six types of capital in Figure 1 represent the categories most related to our project goals in Page County. 
 
@@ -43,7 +43,7 @@ The six types of capital in Figure 1 represent the categories most related to ou
 
 
 We then connected the community capital framework for analyzing community development to the Ecological Framework. The Ecological Framework postulates that some people are at higher risk or more vulnerable because of multiple factors at different levels. 
-The four main levels outlined in the framework include: individual, relationships, community and societal. Factors at each level may affect the level of an individual’s vulnerability.
+The four main levels outlined in the framework include individual, relationships, community, and societal. Factors at each level may affect the level of an individual’s vulnerability.
  
  In figure 2, we linked factors of Economic Vulnerability by color to the four main levels of the ecological framework. 
 
