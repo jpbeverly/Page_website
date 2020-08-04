@@ -214,7 +214,6 @@ $(document).ready(function(){
 <p>The social and economic vulnerability index (SEVI) is constructed using county level data on poverty rate, ethnicity, education level, unemployment, SNAP benefits, health insurance, age, and married status. All of these factors can affect the level of vulnerability in a county. A few selected variables are graphed below.</p>
 <iframe src="https://tabassum.shinyapps.io/Page_Variables_Shiny/?showcase=0" width="672" height="610px">
 </iframe>
-<p>knitr::include_app('<a href="https://tabassum.shinyapps.io/Page_Variables_Shiny/" class="uri">https://tabassum.shinyapps.io/Page_Variables_Shiny/</a> ', height = &quot;750px&quot;, fig.fullwidth=TRUE) ```</p>
 <p>We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had approximate 24%, 21%, and 12.2% of the overall variation respectively, and cumulatively 57% of the overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the square of the factor loadings as our weight when constructing the composite.</p>
 <p>Our model uses a varimax rotation with the maximum likelihood solution method. Using the correlations with the unobserved factors, we use the following formula to construct the composite vulnerability scores.</p>
 <p><span class="math display">\[\mathcal{F} = (X^s\centerdot F^T) \centerdot \textbf{w}\]</span></p>
