@@ -19,8 +19,6 @@ library(knitr)
 knitr::include_app('https://tabassum.shinyapps.io/Page_Variables_Shiny/', height = "610px")
 ```
 
-knitr::include_app('https://tabassum.shinyapps.io/Page_Variables_Shiny/ ', height = "750px", fig.fullwidth=TRUE)
-```
 
 We first standardized all variables to a common scale before applying the factor analysis. The three factors with the highest loadings were retained in constructing the final index. These factors had approximate 24%, 21%, and 12.2% of the overall variation respectively, and cumulatively 57% of the overall variation. The square of the factor loadings represents the proportion of the total unit variance of the indicator that is explained by the factor. Therefore, we take the square of the factor loadings as our weight when constructing the composite.
 
