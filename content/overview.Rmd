@@ -16,6 +16,7 @@ Page County suffers from some of the highest rates of recidivism in the state of
 
 
 ![Virginia](/images/PageCounty.png){style="width:75%; style = display: block; margin-left: auto; margin-right: auto;"}
+[1]
 
 ###Project Goals 
 
@@ -42,8 +43,8 @@ The six types of capital in Figure 1 represent the categories most related to ou
 
 
 
-We then connected the community capital framework for analyzing community development to the Ecological Framework. The Ecological Framework postulates that some people are at higher risk or more vulnerable because of multiple factors at different levels. 
-The four main levels outlined in the framework include individual, relationships, community, and societal. Factors at each level may affect the level of an individual’s vulnerability.
+We then connected the community capital framework for analyzing community development to the Ecological Framework. The Ecological Framework postulates that some people are at higher risk or more vulnerable because of multiple factors at different levels (Brofenbrenner, 1979). 
+The four main levels outlined in the framework include individual, relationships, community, and societal. Factors at each level may affect the level of an individual’s vulnerability .
  
  In figure 2, we linked factors of Economic Vulnerability by color to the four main levels of the ecological framework. 
 
@@ -58,5 +59,7 @@ References:
 Bronfenbrenner, U. (1979). The ecology of human development. Harvard university press.
 
 Emery, M., & Flora, C. (2006). Spiraling-up: Mapping community transformation with community capitals framework. Community development, 37(1), 19-35.
+
+[1] Image Source: https://en.wikipedia.org/wiki/Page_County,_Virginia
 
 
