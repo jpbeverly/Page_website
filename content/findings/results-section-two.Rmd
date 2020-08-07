@@ -49,9 +49,9 @@ mapVA  <- st_read("isochrones/VirginiaShapeFiles/tl_2019_51_tract.shp",
 
 map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
 
-mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1)
-all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0)
-map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0)
+mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1, homebutton = FALSE)
+all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0, homebutton = FALSE)
+map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0, homebutton = FALSE)
 map_page <- all_outline+mapview_for_page +map_page_outline
 
 
@@ -60,7 +60,7 @@ health_service <- read_excel("isochrones/health_page.xlsx", sheet = "Sheet1")
 cor_health_service <- health_service[-c(5,60),]
 coordinates(cor_health_service) <-c("Longitude", "Latitude")
 proj4string(cor_health_service) <-CRS("+proj=longlat +datum=WGS84")
-map_for_points <- mapview(cor_health_service, cex =2,color="orange", col.regions= "orange", layer.name= "Health Services")
+map_for_points <- mapview(cor_health_service, cex =2,color="orange", col.regions= "orange", layer.name= "Health Services",homebutton = FALSE)
 #map_for_points
 
 map_with_all_points <- map_page+map_for_points
@@ -74,13 +74,13 @@ colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a
 st_crs(health_iso_20_index_2) = 4326
 st_crs(health_iso_20_index_60) = 4326
 
-m_2 = mapview(health_iso_20_index_2, layer.name = "20 minute isochrone", col.regions = colors[10])
-m_60 = mapview(health_iso_20_index_60, layer.name = "20 minute isochrone", col.regions = colors[10])
+m_2 = mapview(health_iso_20_index_2, layer.name = "20 minute isochrone", col.regions = colors[10],homebutton = FALSE)
+m_60 = mapview(health_iso_20_index_60, layer.name = "20 minute isochrone", col.regions = colors[10],homebutton = FALSE)
 
 cor_two_health_service <- health_service[c(2,60),]
 coordinates(cor_two_health_service) <-c("Longitude", "Latitude")
 proj4string(cor_two_health_service) <-CRS("+proj=longlat +datum=WGS84")
-map_for_two_points <- mapview(cor_two_health_service, cex =2,color="red", col.regions= "red", layer.name = "Health Service with Distance")
+map_for_two_points <- mapview(cor_two_health_service, cex =2,color="red", col.regions= "red", layer.name = "Health Service with Distance",homebutton = FALSE)
 #map_for_two_points
 
 
@@ -112,7 +112,7 @@ filtered_hospitals <- hospitals  %>%
                     "22727" # Part of Madison
   ))
 
-map_for_points2 <- mapview(filtered_hospitals, cex =2,color="orange", col.regions= "orange", layer.name= "Hospitals")
+map_for_points2 <- mapview(filtered_hospitals, cex =2,color="orange", col.regions= "orange", layer.name= "Hospitals",homebutton = FALSE)
 #map_for_points
 
 map_with_all_points2 <- map_page+map_for_points2
@@ -125,11 +125,11 @@ hospitals_iso_20_index_3 <- readRDS("isochrones/hospitals_iso_20_index_3.RDS")
 
 colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
 
-m2_1 = mapview(hospitals_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10])
+m2_1 = mapview(hospitals_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10],homebutton = FALSE)
 #m2_1
-m2_2 = mapview(hospitals_iso_20_index_2, layer.name = "20 minute isochrone 2", col.regions = colors[10])
+m2_2 = mapview(hospitals_iso_20_index_2, layer.name = "20 minute isochrone 2", col.regions = colors[10],homebutton = FALSE)
 #m2_2
-m2_3 = mapview(hospitals_iso_20_index_3, layer.name = "20 minute isochrone 3", col.regions = colors[10])
+m2_3 = mapview(hospitals_iso_20_index_3, layer.name = "20 minute isochrone 3", col.regions = colors[10],homebutton = FALSE)
 #m2_3
 
 m_last2<- map_with_all_points2+m2_1+ m2_2 + m2_3
@@ -151,9 +151,9 @@ mapVA  <- st_read("isochrones/VirginiaShapeFiles/tl_2019_51_tract.shp",
 
 map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
 
-mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1)
-all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0)
-map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0)
+mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1,homebutton = FALSE)
+all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0,homebutton = FALSE)
+map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0,homebutton = FALSE)
 map_page <- all_outline+mapview_for_page +map_page_outline
 
 
@@ -175,7 +175,7 @@ filtered_college_university <- Colleges_and_Universities %>% filter( STATE == "V
 cor_filtered_college_university <- filtered_college_university
 coordinates(cor_filtered_college_university) <-c("LONGITUDE", "LATITUDE")
 proj4string(cor_filtered_college_university) <-CRS("+proj=longlat +datum=WGS84")
-map_for_points <- mapview(cor_filtered_college_university, cex =2,color="orange", col.regions= "orange", layer.name= "Universities and Colleges")
+map_for_points <- mapview(cor_filtered_college_university, cex =2,color="orange", col.regions= "orange", layer.name= "Universities and Colleges",homebutton = FALSE)
 #map_for_points
 
 map_with_all_points <- map_page+map_for_points
@@ -191,11 +191,11 @@ st_crs(clg_uni_iso_20_index_3) = 4326
 
 colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
 
-m_1 = mapview(clg_uni_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10])
+m_1 = mapview(clg_uni_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10],homebutton = FALSE)
 #m_1
-m_2 = mapview(clg_uni_iso_20_index_2, layer.name = "20 minute isochrone 2", col.regions = colors[10])
+m_2 = mapview(clg_uni_iso_20_index_2, layer.name = "20 minute isochrone 2", col.regions = colors[10],homebutton = FALSE)
 #m_2
-m_3 = mapview(clg_uni_iso_20_index_3, layer.name = "20 minute isochrone 3", col.regions = colors[10])
+m_3 = mapview(clg_uni_iso_20_index_3, layer.name = "20 minute isochrone 3", col.regions = colors[10],homebutton = FALSE)
 #m_3
 
 
@@ -223,9 +223,9 @@ mapVA  <- st_read("isochrones/VirginiaShapeFiles/tl_2019_51_tract.shp",
 
 map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
 
-mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1)
-all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0)
-map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0)
+mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1,homebutton = FALSE)
+all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0,homebutton = FALSE)
+map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0,homebutton = FALSE)
 map_page <- all_outline+mapview_for_page +map_page_outline
 
 
@@ -250,7 +250,7 @@ sf_work_dev_center <- st_as_sf(workforce_dev_center_data, coords = c("Longitude"
 #cor_workforce_dev_center_data <- workforce_dev_center_data
 #coordinates(cor_workforce_dev_center_data) <-c("Longitude", "Latitude")
 #proj4string(cor_workforce_dev_center_data) <-CRS("+proj=longlat +datum=WGS84")
-map_for_points <- mapview(sf_work_dev_center, cex =2,color="orange", col.regions= "orange", layer.name= "Workforce Development Centers")
+map_for_points <- mapview(sf_work_dev_center, cex =2,color="orange", col.regions= "orange", layer.name= "Workforce Development Centers",homebutton = FALSE)
 #map_for_points
 
 map_with_all_points <- map_page+map_for_points
@@ -265,9 +265,9 @@ st_crs(wrk_dev_iso_20_index_8) = 4326
 
 colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
 
-m_1 = mapview(wrk_dev_iso_20_index_4, layer.name = "20 minute isochrone 1", col.regions = colors[10])
+m_1 = mapview(wrk_dev_iso_20_index_4, layer.name = "20 minute isochrone 1", col.regions = colors[10],homebutton = FALSE)
 #m_1
-m_2 = mapview(wrk_dev_iso_20_index_8, layer.name = "20 minute isochrone 2", col.regions = colors[10])
+m_2 = mapview(wrk_dev_iso_20_index_8, layer.name = "20 minute isochrone 2", col.regions = colors[10],homebutton = FALSE)
 #m_2
 
 m_last<- map_with_all_points+m_1+m_2
@@ -291,9 +291,9 @@ mapVA  <- st_read("isochrones/VirginiaShapeFiles/tl_2019_51_tract.shp",
 
 map_and_data <- inner_join(mapVA, acs_Page_area, by = "GEOID")
 
-mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1)
-all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0)
-map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0)
+mapview_for_page = mapview(map_and_data,zcol = "Total_Population", layer.name = "census tract total population",alpha.regions= 1,homebutton = FALSE)
+all_outline <- mapview(va_sf, color="black", size=.5,legend=FALSE,alpha.regions= 0,homebutton = FALSE)
+map_page_outline <- mapview(page_outline, zcol= NULL, color="red", size=2, legend= FALSE,alpha.regions= 0,homebutton = FALSE)
 map_page <- all_outline+mapview_for_page +map_page_outline
 
 
@@ -310,7 +310,7 @@ sf_small_business_data <- st_as_sf(small_business_data, coords = c("Longitude", 
 #cor_workforce_dev_center_data <- workforce_dev_center_data
 #coordinates(cor_workforce_dev_center_data) <-c("Longitude", "Latitude")
 #proj4string(cor_workforce_dev_center_data) <-CRS("+proj=longlat +datum=WGS84")
-map_for_points <- mapview(sf_small_business_data, cex =2,color="orange", col.regions= "orange", layer.name= "Small Business Development Centres")
+map_for_points <- mapview(sf_small_business_data, cex =2,color="orange", col.regions= "orange", layer.name= "Small Business Development Centres",homebutton = FALSE)
 #map_for_points
 
 map_with_all_points <- map_page+map_for_points
@@ -322,7 +322,7 @@ st_crs(small_business_dev_iso_20_index_1) = 4326
 
 colors <- c("#232d4b","#2c4f6b","#0e879c","#60999a","#d1e0bf","#d9e12b","#e6ce3a","#e6a01d","#e57200","#fdfdfd")
 
-m_1 = mapview(small_business_dev_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10])
+m_1 = mapview(small_business_dev_iso_20_index_1, layer.name = "20 minute isochrone 1", col.regions = colors[10],homebutton = FALSE)
 #m_1
 m_last<- map_with_all_points+m_1
 
